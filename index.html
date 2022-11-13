@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/estilo.css">
+    <link rel="shortcut icon" href="img/libro.png" type="image/x-icon">
+    <style>
+      @import url('https://fonts.googleapis.com/css2?family=Raleway:wght@500&display=swap');
+      </style>
+    <title>Colegio Pies Descalzos</title>
+</head>
+<body>
+    <div id="titulo"><h1>Colegio Pies Descalzos </h1><img src="img/libro.png" class="icono"></div>
+    <form class="formulario" method="post">
+      <h2>Formulario</h2>
+        <ul>
+        <li >
+          <label for="nombres">Nombres</label>
+          <input type="text" id="nombres" name="nom">
+        </li>
+        <li>
+          <label for="apellidos">Apellidos</label>
+          <input type="text" id="apellidos" name="ape">
+        </li>
+        <li>
+          <label for="curso">Curso</label>
+          <select id="curso">
+            <option value="" disabled selected >Seleccione su curso</option>
+            <option value="6">Sexto</option>
+            <option value="7">Septimo</option>
+            <option value="8">Octavo</option>
+            <option value="9">Noveno</option>
+            <option value="10">Decimo</option>
+            <option value="11">Once</option>
+        </select>
+        </li>
+        <li>
+            <label for="edad">Edad</label>
+            <input type="number" id="edad" name="ed" min = "0" max = "100">
+          </li>
+          <li>
+            <label for="sexo">Sexo</label>
+            <select id="sexo">
+            <option value=""disabled selected>Seleccione su sexo</option>
+            <option value="Femenino">Femenino</option>
+            <option value="Masculino">Masculino</option>
+            </select>
+          </li>
+          <li>
+            <label for="ecivil">Estado Civil</label>
+            <input type="text" id="ecivil" name="civil">
+          </li>
+          <li>
+            <label for="poblacion">Poblacion vulnerable</label>
+            <select id="poblacion">
+            <option value="" disabled selected>Elija su tipo de poblacion</option>
+            <option value="Si">Si</option>
+            <option value="No">No</option>
+            </select>
+          </li>
+          <li>
+            <label for="ubicacion" >Ubicación</label>
+            <select id="ubicacion">
+            <option value="" disabled selected>Elija su Ubicación</option>
+            <option value="La Playa">La Playa</option>
+            <option value="Malambo">Malambo</option>
+            <option value="Barranquilla">Barranquilla</option>
+            <option value="Galapa">Galapa</option>
+            </select>
+          </li>
+        </ul>
+        <div id="bot"><input type="submit" id="button" value="Enviar"></div>
+        <div id="alerta"></div>
+      </form>
+      <dialog id="mensaje">
+        <ul>
+          <li class="xd">
+            <table border="1">
+            <tr>
+              <td><label for="PMayores">Nº Personas mayores de edad</label></td>
+              <td id="personas_m"></td>
+            </tr>
+              </table>
+          </li>
+          <li class="xd">
+            <table border="0" class="tabla">
+              <tr>
+                <td rowspan="2"> <label for="PCurso">Nº Personas por curso</label></td>
+                <td >Sexto</td>
+                <td>Septimo</td>
+                <td>Octavo</td>
+                <td>Noveno</td>
+                <td>Decimo</td>
+                <td>Once</td>
+              </tr>
+              <tr>
+                <td id="sexto"> </td>
+                <td id="septimo"> </td>
+                <td id="octavo"> </td>
+                <td id="noveno"> </td>
+                <td id="decimo"> </td>
+                <td id="once"> </td>
+              </tr>
+            </table>
+          </li>
+          <li class="xd">
+            <table border="0">
+              <tr>
+                <td rowspan="2"><label for="PGenero">Nº Personas por género</label></td>
+                <td>Femenino</td>
+                <td>Masculino</td>
+              </tr>
+              <tr>
+                <td id="fem"> </td>
+                <td id="masc"> </td>
+              </tr>
+            </table>
+          </li>
+          <li class="xd">
+            <table border="0">
+              <tr>
+                <td><label for="PVulnerables">Nº Personas vulnerables</label></td>
+                <td id="vulnerable"> </td>
+              </tr>
+                </table>
+          </li>
+          <li class="xd">
+            <table border="0">
+              <tr>
+                <td rowspan="2"><label for="PUbicacion">Nº Personas por ubicación</label></td>
+                <td>La Playa</td>
+                <td>Malambo</td>
+                <td>Barranquilla</td>
+                <td>Galapa</td>
+              </tr>
+              <tr>
+                <td id="playaa"> </td>
+                <td id="malamboo"> </td>
+                <td id="bquilla"> </td>
+                <td id="galapaa"> </td>
+              </tr>
+            </table>
+          </li>
+        </ul>
+        <button id="btncerrar">Cerrar</button>
+      </dialog>
+</body>
+<script src="js/funciones.js"></script>
+</html>
